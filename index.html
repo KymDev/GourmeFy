@@ -1,152 +1,135 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gourmefy: Descubra, cozinhe e aproveite as melhores receitas, de pratos frios a culinária internacional!">
-  <meta name="keywords" content="Receitas, Comida, Culinária, Gourmet, Pratos, Doces, Jantar">
+  <title>Gourmefy - Sabores Autênticos</title>
+ 
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap" rel="stylesheet">
 
-  <title>Gourmefy</title>
   <link rel="stylesheet" href="stylepag.css">
   <link rel="shortcut icon" href="Logo GourmetFy/GOURMEFYtransp400.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <header class="header">
+  <header>
     <div class="top-bar">
       <div class="auth-buttons">
-        <a href="login.html" class="btn-login">Login</a>
-        <a href="register.html" class="btn-register">Register</a>
-
+        <a href="login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> Acesso</a>
+        <a href="register.html" class="btn btn-register"><i class="fas fa-user-plus"></i> Reservas</a>
       </div>
-
     </div>
-    <picture><img src="Logo GourmetFy/faviconGOURMEFYtransp200.png" alt=""></picture>
-    <h1>Gourmefy</h1>
-    <p>Descubra, cozinhe e aproveite as melhores receitas!</p>
+    
+    <div class="hero">
+      <img src="Logo GourmetFy/GOURMEFYtransp400.png" alt="Gourmefy Logo" class="logo">
+      <h1 class="hero-title">Gourmefy</h1>
+      <p class="hero-slogan">Onde a sofisticação encontra o rústico</p>
+    </div>
+    
     <nav class="navbar">
-      <ul>
-        <li><a href="#">Feed de Receitas</a></li>
-        <li><a href="#">Minhas Criações</a></li>
-        <li><a href="#">#</a></li>
-        <li><a href="#">#</a></li>
+      <ul class="nav-links">
+        <li><a href="#menu"><i class="fas fa-utensils"></i> Cardápio</a></li>
+        <li><a href="#about"><i class="fas fa-seedling"></i> Fazenda</a></li>
+        <li><a href="#events"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contato</a></li>
       </ul>
     </nav>
-    <div class="search">
-      <input type="text" placeholder="Buscar receitas...">
-      <button>Buscar</button>
-    </div>
   </header>
 
-  <main class="content">
-
-    <section class="category">
-      <h2>Jantar</h2>
-      <div class="card">
-        <img src="img/jantar.png" alt=>
-        <p>Refeições fartas para desfrutar com a família e amigos.</p>
+  <!-- Main Content -->
+  <main>
+    <!-- Seção de Cardápio -->
+    <section class="menu-section" id="menu">
+      <div class="section-header">
+        <h2>Nossas Especialidades</h2>
+        <div class="search-box">
+          <input type="text" placeholder="Buscar receitas..." />
+          <button class="btn-search"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+      <div class="menu-grid">
+        <!-- Card Jantar -->
+        <article class="menu-card">
+          <div class="card-image">
+            <img src="img/agriculturafamiliar.png" alt="Jantar">
+            <div class="card-overlay">
+              <i class="fas fa-drumstick-bite"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Jantar</h3>
+            <p>Refeições completas com ingredientes da estação</p>
+          </div>
+        </article>
+        <!-- Card Internacional -->
+        <article class="menu-card">
+          <div class="card-image">
+            <img src="img/culinariainter.png" alt="Internacional">
+            <div class="card-overlay">
+              <i class="fas fa-globe-europe"></i>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3>Internacional</h3>
+            <p>Sabores autênticos de diversas culturas</p>
+          </div>
+        </article>
+        <!-- Você pode incluir mais cards seguindo o mesmo padrão -->
       </div>
     </section>
 
-    <section class="category">
-      <h2>Internacional</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p>Explore sabores do mundo com pratos de diversas culturas.</p>
+    <!-- Seção Fazenda -->
+    <section class="farm-section" id="about">
+      <div class="farm-content">
+        <h2>Da Nossa Fazenda</h2>
+        <p>Ingredientes orgânicos cultivados com paixão</p>
+        <div class="farm-grid">
+          <div class="farm-item">
+            <i class="fas fa-tractor"></i>
+            <h4>Agricultura Sustentável</h4>
+          </div>
+          <div class="farm-item">
+            <i class="fas fa-leaf"></i>
+            <h4>Colheita Orgânica</h4>
+          </div>
+          <div class="farm-item">
+            <i class="fas fa-water"></i>
+            <h4>Uso Consciente da Água</h4>
+          </div>
+        </div>
       </div>
     </section>
-
-    <section class="category">
-      <h2>Datas Especiais</h2>
-      <div class="card">
-        <img src="#" alt=>
-        <p>Receitas temáticas para celebrar momentos especiais.</p>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Frutos do Mar</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p>Pratos com peixes, camarões, mariscos e receitas do litoral</p>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Comida Vegana</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p>100% à base de plantas, sem ingredientes de origem animal.</p>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Petiscos e Entradas</h2>
-      <div class="card">
-        <img src="img/pratos frios.png" alt=>
-        <p>Aperitivos, pratos frios, porções e receitas rápidas.</p>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Fit e Saudável</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p>Pratos low carb, vegetarianos e opções para manter a dieta.</p>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Caldos e Sopas</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p>Receitas quentes e reconfortantes para dias frios.</p>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Massas e Pizzas</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p>Pizzas, macarrão, lasanhas e receitas italianas clássicas.</p>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Doces e Sobremesas</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p>Bolos, tortas, brigadeiros e delícias para adoçar o dia.</p>
-      </div>
-    </section>
-
-    <section class="category">
-      <h2>Lanches e Fast Food</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p> Opções rápidas para o dia a dia</p>
-      </div>
-    </section>
-
-
-
-    <section class="category">
-      <h2>Bebidas e Drinks</h2>
-      <div class="card">
-        <img src="placeholder.jpg" alt=>
-        <p>Sucos, coquetéis, shakes e receitas de bebidas criativas.</p>
-      </div>
-    </section>
-
-
-
   </main>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Gourmefy. Receitas Fáceis e Deliciosas. Todos os direitos reservados.</p>
-    <div class="social-links">
-      <a href="https://github.com/KymDev" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/kymdev/" target="_blank">linkedin</a>
-      <a href="https://www.instagram.com/eusou_kim/" target="_blank">Instagram</a>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="Logo GourmetFy/faviconGOURMEFYtransp200.png" alt="Gourmefy Logo">
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+      </div>
+      <div class="contact-info">
+        <p>Rua das Colheitas, 123 - Jequitinhonha</p>
+        <p>Horário: Ter-Dom 18h-23h</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 Gourmefy - Sabores Autênticos</p>
     </div>
   </footer>
+
+  <!-- ScrollReveal para animações dinâmicas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+  <script>
+    ScrollReveal().reveal('.hero', { delay: 200, distance: '50px', origin: 'top' });
+    ScrollReveal().reveal('.nav-links li', { delay: 300, distance: '30px', origin: 'bottom', interval: 100 });
+    ScrollReveal().reveal('.menu-card', { delay: 200, distance: '50px', origin: 'bottom', interval: 100 });
+    ScrollReveal().reveal('.farm-item', { delay: 200, distance: '50px', origin: 'left', interval: 100 });
+  </script>
 </body>
 </html>
